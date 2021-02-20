@@ -1,9 +1,8 @@
 import React from 'react'
+import Home from './containers/home'
 
-function App() {
+export default function App() {
   return (
-    <h1>Dev React Corebiz</h1>
+    <Home />
   )
 }
-
-export default App
