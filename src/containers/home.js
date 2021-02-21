@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Slider from '../components/slider'
 import Shopping from '../components/shopping'
 import ParticipeNews from '../components/participeNews'
+import Footer from '../components/footer'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Slider />
       <Shopping />
       <ParticipeNews />
+      <Footer />
     </>
   )
 }

@@ -27,7 +27,7 @@ export default function ParticipeNews() {
 
   return (
     <div id="participeNews">
-      <Typography variant="h6" style={{ textAlign: "center" }}>
+      <Typography variant="h6" style={{ textAlign: "start", padding: "0 10%" }}>
         Participe de nossas news com promoções e novidades!
       </Typography>
       <div className="form-participe">
