@@ -1,0 +1,43 @@
+#participeNews {
+  background-color: #F2F2F2;
+  margin-top: 20px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-participe {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.input-participate {
+  margin: 20px 0;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.input-participate:last-child {
+  margin-top: 0;
+}
+
+@media(min-width: 768px) {
+  .form-participe {
+    flex-direction: row;
+  }
+}
+
+@media(min-width: 1200px) {
+  .form-participe {
+    width: 50%;
+  }
+
+  .input-participate {
+    margin: 0;
+  }
+}
