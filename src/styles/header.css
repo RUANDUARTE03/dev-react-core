@@ -1,13 +1,17 @@
-#mainNav {
+#mainHeader {
   background-color: #ffffff;
-  height: 70px;
+  min-height: 70px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 100vw;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 1px solid black;
 }
 
-#mainNav img {
+#mainHeader img {
   width: 120px;
   object-fit: contain;
 }
@@ -25,6 +29,7 @@
 
 .container-modal {
   width: 200px;
+  margin-top: 80px;
   padding: 50px 0 0 15px;
 }
 
@@ -35,11 +40,11 @@
 }
 
 @media(min-width: 768px) {
-  #mainNav {
+  #mainHeader {
     flex-direction: row;
   }
 
-  #mainNav img {
+  #mainHeader img {
     width: 150px;
     object-fit: contain;
   }

@@ -6,7 +6,7 @@ import Services from '../services/products'
 import ProductList from './_productList'
 import '../styles/shopping.css'
 
-export default function Shopping() {
+export default function Shopping(props) {
   const [loading, setLoading] = useState(false)
   const [showDirections, setShowDirections] = useState(false)
   const [products, setProducts] = useState([])
@@ -29,7 +29,6 @@ export default function Shopping() {
         setShowDirections(displayDirections)
       })
       resizeObserver.observe(document.getElementById("root"));
-
     })
 
   }, [])
@@ -67,6 +66,7 @@ export default function Shopping() {
               <ProductList
                 product={product}
                 index={index}
+                addItemCart={props.addItemCart}
               />
             )
           })}

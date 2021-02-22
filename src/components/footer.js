@@ -9,10 +9,12 @@ import '../styles/footer.css'
 
 const Btn = (props) => (
   <Button
-    startIcon={props.startIcon}
-    style={{ backgroundColor: "white", width: "80%", fontWeight: "bold", marginTop: 20 }}
+    style={{ backgroundColor: "white", width: "70%", marginTop: 20 }}
   >
-    {props.description}
+    {props.startIcon}
+    <Typography variant="body1" style={{ marginLeft: 25, fontWeight: "bold" }}>
+      {props.description}
+    </Typography>
   </Button>
 )
 
@@ -42,11 +44,11 @@ export default function Footer() {
       </div>
       <div className="footer-center col-12 col-md-4">
         <Btn
-          startIcon={<EmailIcon />}
+          startIcon={<EmailIcon style={{ position: "absolute", left: 20 }} />}
           description="ENTRE EM CONTATO"
         />
         <Btn
-          startIcon={<HeadsetMicIcon />}
+          startIcon={<HeadsetMicIcon style={{ position: "absolute", left: 20 }} />}
           description="FALE COM O NOSSO CONSULTOR ONLINE"
         />
       </div>
